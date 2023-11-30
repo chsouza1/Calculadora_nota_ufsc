@@ -19,7 +19,7 @@ def calculadora_notas():
                 ##calculo previsto
                 nota_aleatoria = float(input("Digite qual a nota mais baixa que voce consegue tirar na prova: "))
                 nota_aleatoria *= porcentagem_prova
-
+h
 
                 break
             else:
