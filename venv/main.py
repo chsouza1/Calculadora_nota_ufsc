@@ -42,18 +42,29 @@ def calculadora_notas():
                 if calculo_completo >= 5.75:
                     print(f"Parabéns Você esta aprovado!!!")
                 elif calculo_completo <= 5.75:
-                    print(f"QUE PENA VOCE ESTA REPROVADO BURRO!!")
-
-                    continue
-
+                    print(f"Estude mais :-D!!")
+                    chamar_menu()
             else:
                 print("Favor, digite uma nota válida entre 0 e 10.")
 
         except ValueError:
             print("Por favor, digite um valor numérico válido.")
 
+def chamar_menu():
+    while True:
+        print("\nMenu:")
+        print("1. Voltar para o Menu Principal")
+        print("2. Sair do programa")
+
+        escolha = input("Digite sua escolha (1 ou 2): ")
+        if escolha == "1":
+            break
+        elif escolha == "2":
+            return
+        else:
+            print("Escolha inválida. Digite 1 para boltar ao Menu Principal")
 
 # Chama a função principal
 calculadora_notas()
 
-input("Pressione enter para fechar o programa ....")
+
