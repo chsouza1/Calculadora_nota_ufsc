@@ -10,9 +10,9 @@ def calculadora_notas():
     # Nota da prova
     while nota_prova == 0 or porcentagem_prova == 0 or nota_trabalho == 0 or porcentagem_trabalho == 0:
         try:
-            porcentagem_prova = float(input("Digite qual o modelo de porcentagem da prova *SOMENTE O NUMERO* SEM A (%): "))
+            porcentagem_prova = int(input("Digite qual o modelo de porcentagem da prova *SOMENTE O NUMERO* SEM A (%): "))
             nota_prova = float(input("Digite a nota que obteve na prova atual: "))
-            porcentagem_trabalho = float(input("Digite o modelo de porcentagem dos trabalho *SOMENTE O NUMERO* SEM A (%): "))
+            porcentagem_trabalho = int(input("Digite o modelo de porcentagem dos trabalho *SOMENTE O NUMERO* SEM A (%): "))
             nota_trabalho = float(input("Digite qual sua nota no trabalho:  "))
 
             if 0 <= nota_prova <= 10 and 0 <= porcentagem_prova <= 100 and 0 <= nota_trabalho <= 10 and 0 <= porcentagem_trabalho <= 100:
