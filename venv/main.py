@@ -56,3 +56,4 @@ def calculadora_notas():
 # Chama a função principal
 calculadora_notas()
 
+input("Pressione enter para fechar o programa ....")
